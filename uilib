@@ -74,7 +74,7 @@ function ClickEffect(r)
             s.Image = "rbxassetid://2708891598"
             s.ImageTransparency = 0.800
             s.ScaleType = Enum.ScaleType.Fit
-            s.ImageColor3 = Color3.fromRGB(131, 132, 255)
+            s.ImageColor3 = Color3.fromRGB(187, 32, 249)
             s.Position =
                 UDim2.new(
                 (h.X - s.AbsolutePosition.X) / r.AbsoluteSize.X,
@@ -101,7 +101,7 @@ t.Name = b.HttpService:GenerateGUID()
 t.Parent = b.RunService:IsStudio() and b.Players.LocalPlayer:WaitForChild("PlayerGui") or b.CoreGui
 b.UserInputService.InputBegan:Connect(
     function(u, v)
-        if u.KeyCode == Enum.KeyCode.LeftShift and not v then
+        if u.KeyCode == Enum.KeyCode.Insert and not v then
             t.Enabled = not t.Enabled
         end
     end
@@ -135,7 +135,7 @@ function a:Window(w)
         ColorSequence.new {
         ColorSequenceKeypoint.new(0.00, Color3.fromRGB(43, 43, 43)),
         ColorSequenceKeypoint.new(0.20, Color3.fromRGB(43, 43, 43)),
-        ColorSequenceKeypoint.new(0.50, Color3.fromRGB(131, 132, 255)),
+        ColorSequenceKeypoint.new(0.50, Color3.fromRGB(187, 32, 249)),
         ColorSequenceKeypoint.new(0.80, Color3.fromRGB(43, 43, 43)),
         ColorSequenceKeypoint.new(1.00, Color3.fromRGB(43, 43, 43))
     }
@@ -412,7 +412,7 @@ function a:Window(w)
         a7.Parent = a6
         a8.Name = "SliderPart"
         a8.Parent = a6
-        a8.BackgroundColor3 = Color3.fromRGB(131, 133, 255)
+        a8.BackgroundColor3 = Color3.fromRGB(187, 32, 249)
         a8.BorderSizePixel = 0
         a8.Size = UDim2.new((S or 0) / a2, 0, 1, 0)
         a9.CornerRadius = UDim.new(0, 4)
@@ -465,7 +465,7 @@ function a:Window(w)
                             b.TweenService:Create(
                                 a8,
                                 TweenInfo.new(0.15),
-                                {BackgroundColor3 = Color3.fromRGB(131, 133, 255)}
+                                {BackgroundColor3 = Color3.fromRGB(187, 32, 249)}
                             ):Play()
                         end
                     )
